@@ -1,0 +1,16 @@
+<div *ngIf="movies.length > 0">
+    <div *ngFor="let movie of movies" class="movie-card">
+      <mat-card>
+        <img mat-card-image [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path" alt="Movie poster" />
+        <mat-card-content>
+          <h2>{{ movie.title }}</h2>
+          <p>{{ movie.release_date | date }}</p>
+          <p>{{ movie.overview | slice:0:100 }}...</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button [routerLink]="['/movie', movie.id]">View Details</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+  

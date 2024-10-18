@@ -1,0 +1,53 @@
+/* Styling for the movie card */
+mat-card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  
+  /* Movie poster image styling */
+  mat-card img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  /* Title styling */
+  mat-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: #333;
+  }
+  
+  /* Release date and overview text */
+  mat-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Aligning card actions to the right */
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Button styling */
+  button[mat-button] {
+    background-color: #2196f3;
+    color: white;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  button[mat-button]:hover {
+    background-color: #1976d2;
+  }
+  
